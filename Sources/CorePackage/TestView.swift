@@ -2,6 +2,11 @@ import UIKit
 
 public class TestView: UIView, Instantiatable {
     
+    @IBOutlet var testLabel: UILabel! {
+        didSet {
+            testLabel.text = "Testing SPM"
+        }
+    }
     
 }
 
